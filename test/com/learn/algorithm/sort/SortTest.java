@@ -15,9 +15,10 @@ class SortTest {
 	private List<Sort> sorts= new ArrayList<>();
 	
 	{
-		sorts.add(new BubbleSort());
-		sorts.add(new SelectionSort());		
-		sorts.add(new InsertionSort());
+//		sorts.add(new BubbleSort());
+//		sorts.add(new SelectionSort());		
+//		sorts.add(new InsertionSort());
+		sorts.add(new MergeSort());
 	}
 	
 	@Test

@@ -7,12 +7,12 @@ public class MergeSort implements Sort{
 
 
 	public static void main(String[] args) {
-		int input[]= {1,3,2,8,1,3,4,5,1,1,2,33,2,3,3,3,3,1,1,1,1,1,3,1,1,3,2,334,2,34,23,4,4,3242,342,5,342,4,3,342,34};
+		int input[]= {0,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,9,1,2,3,4,5,6,7,8,1,1,2,2,3,3,4,4,4,65};
 
 		MergeSort mergeSort = new MergeSort();
 		int[] a = mergeSort.sort(input);
 		for(int num: a) {
-			System.out.println(num);
+			System.out.print(num+",");
 		}
 	}
 
@@ -57,9 +57,11 @@ public class MergeSort implements Sort{
 			if (null==l || null==r) {
 				if(null==l) {
 					merged[i]=r;
+					k++;
 				}
 				if(null==r) {
 					merged[i]=l;
+					j++;
 				}
 			}
 			else {
